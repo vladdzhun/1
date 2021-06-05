@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="tabs">
+      <div class="tab whiteborder">Tab 1</div>
+      <div class="tab">Tab 2</div>
+      <div class="tab">Tab 3</div>
+
+
+      <div class="tabContent">
+        <div>
+          <label class="rev-text" for="name">Річ: </label>
+          <input class="revenue-input" type="text" name="item" id="item" required>
+          <label class="rev-text" for="name">Ціна: </label>
+          <input class="revenue-input" type="text" name="price" id="price" required>
+          <input class="revenue-input" type="checkbox" name="profit" id="profit" value="1">
+          <label class="rev-text">Прибуток</label>
+          <button class="revenue-button" id="addButton" onclick="addElement()">Додати</button>
+        </div>
+      </div>
+      <div class="tabContent">
+        <h3 class="converter-text">Валюта з якої переводимо</h3>
+        <select id="currency1">
+          <option value="UAH">UAH</option>
+          <input type="text" id="sum" placeholder="Кількість">
+        </select>
+
+        <h3 class="converter-text">Валюта в яку переводимо</h3>
+        <select id="currency2">
+          <option value="UAH">UAH</option>
+          <option value="RUR">RUR</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+        </select>
+
+        <input type="text" id="result" placeholder="Результат">
+        <br>
+        <input id="sell" type="radio" value="0" name="drone" checked> продати
+        <input id="buy" type="radio" value="1" name="drone"> купити
+
+        <button id="calculate">Порахувати</button>
+      </div>
+      <div class="tabContent">
+        <div id = "todo">
+            <h1 class="todo-text">my to-do<i id="pencil" class="fas fa-pencil-alt"></i> </h1>
+
+            <input class="todo-input" type = "text" placeholder="Add New Todo">
+
+            <ul class="todos">
+
+
+            </ul>
+
+            <div id= "buttons">
+                <button class="clear">Clear</button>
+                <button class="save">Save</button>
+              
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="scriptmoney.js"></script>
+    <script type="text/javascript" src="scripttab.js"></script>
+    <script type="text/javascript" src="scriptconv.js"></script>
+    <script type="text/javascript" src="scripttodo.js"></script>
+  </body>
+</html>
